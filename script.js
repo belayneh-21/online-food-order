@@ -83,3 +83,20 @@ function fadeOut(){
 }
 
 window.onload = fadeOut;
+
+
+// cart button show and hide
+
+var cart = document.querySelector('#cart-diplay');
+var closeCart = document.querySelector('#cart-close');
+var CartIcon =  document.querySelector('#cart-icon');
+
+CartIcon.addEventListener('click', () => {
+  cart.classList.remove("-right-full")
+  cart.classList.add("right-0");
+});
+
+closeCart.addEventListener('click', () => {
+  cart.classList.remove("right-0")
+  cart.classList.add("-right-full")
+});

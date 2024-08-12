@@ -31,7 +31,7 @@
         <i class="fas fa-times" id="close-bars"></i>
         <i class="fas fa-search" id="search-icon"></i>
         <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-shopping-cart" id="cart-icon"></a>
       </div>
     </header>
     <!-- search form -->
@@ -602,78 +602,9 @@
       </div>
     </section>
 
-    <!-- oreder-section -->
-
-    <section class="order" id="order">
-      <h3 class="sub-heading">order now</h3>
-      <h1 class="heading">fast and free</h1>
-      <form action="">
-        <div class="inputBox">
-          <div class="input">
-            <span>Your name</span>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="enter your name"
-            />
-          </div>
-          <div class="input">
-            <span>Your number</span>
-            <input
-              type="number"
-              name="name"
-              id="name"
-              placeholder="enter your number"
-            />
-          </div>
-        </div>
-        <div class="inputBox">
-          <div class="input">
-            <span>Your order</span>
-            <input type="text" placeholder="enter food name" />
-          </div>
-          <div class="input">
-            <span>additional food</span>
-            <input type="test" placeholder="extra with food" />
-          </div>
-        </div>
-        <div class="inputBox">
-          <div class="input">
-            <span>how much</span>
-            <input type="number" placeholder="how many ordres" />
-          </div>
-          <div class="input">
-            <span>date and time</span>
-            <input type="datetime-local" />
-          </div>
-        </div>
-        <div class="inputBox">
-          <div class="input">
-            <span>Your address</span>
-            <textarea
-              placeholder="enter food address"
-              cols="30"
-              rows="10"
-            ></textarea>
-          </div>
-          <div class="input">
-            <span>Your message</span>
-            <textarea
-              placeholder="enter food message"
-              cols="30"
-              rows="10"
-            ></textarea>
-          </div>
-        </div>
-
-        <button type="submit" class="btn">order now</button>
-      </form>
-    </section>
-
     <!-- footer section -->
 
-    <section class="footer">
+    <section class="footer mt-10">
       <div class="box-container">
         <div class="box">
           <h3>locations</h3>
@@ -713,16 +644,89 @@
           <a href="#">linkedin</a>
           <a href="#">telegram</a>
         </div>
-
       </div>
 
       <div class="credit">copyright @2024 by <span>mr. belayneh</span></div>
     </section>
 
     <!-- loader imag -->
-     <div class="loader-container">
-      <img src="images/loder.gif" alt="">
+    <div class="loader-container">
+      <img src="images/loader-2_food.gif" alt="">
      </div>
+
+    <!-- cart section -->
+    <section id="cart-diplay"
+      class="fixed top-0 duration-600 -right-full z-[1006] w-full sm:w-1/2 m-0 h-screen bg-gray-600"
+    >
+      <i
+        class="fas fa-times absolute hover:text-red-700 top-8 right-8 text-5xl"
+        id="cart-close"
+      ></i>
+      <h3 class="sub-heading mb-52">selected food</h3>
+      <div class="">
+        <div class="container w-5/6 grid  grid-cols-1 sm:grid-cols-2 gap-4 justify-between">
+          <div class="box">
+            <div class="image">
+              <img src="images/chicken1.jpg" alt="" />
+            </div>
+            <div class="flex justify-between">
+              <h3 class="text-green-900 text-2xl my-5">delicious food</h3>
+              <span class="pice text-2xl my-5">$12.99</span>
+            </div>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img src="images/chicken1.jpg" alt="" />
+            </div>
+            <div class="flex justify-between">
+              <h3 class="text-green-900 text-2xl my-5">delicious food</h3>
+              <span class="pice text-2xl my-5">$12.99</span>
+            </div>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img src="images/chicken1.jpg" alt="" />
+            </div>
+            <div class="flex justify-between">
+              <h3 class="text-green-900 text-2xl my-5">delicious food</h3>
+              <span class="pice text-2xl my-5">$12.99</span>
+            </div>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img src="images/chicken1.jpg" alt="" />
+            </div>
+            <div class=" justify-between">
+              <h3 class="text-green-900 text-2xl my-5">delicious food</h3>
+              <span class="pice text-2xl my-5">$12.99</span>
+            </div>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img src="images/chicken1.jpg" alt="" />
+            </div>
+            <div class="flex justify-between">
+              <h3 class="text-green-900 text-2xl my-5">delicious food</h3>
+              <span class="pice text-2xl my-5">$12.99</span>
+            </div>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img src="images/chicken1.jpg" alt="" />
+            </div>
+            <div class="flex justify-between">
+              <h3 class="text-green-900 text-2xl my-5">delicious food</h3>
+              <span class="pice text-2xl my-5">$12.99</span>
+            </div>
+          </div>
+        </div>
+        <div class="block absolute bottom-10 left-10">
+          <h2 class="text-3xl flex flex-1">total amount <span class="font-bold pl-4">$112.99</span></h2>
+          
+        </div>
+        <a href="checkout.html" class="btn absolute bottom-10 right-10">checkout</a>
+      </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>

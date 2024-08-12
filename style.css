@@ -159,9 +159,6 @@ header .icons #close-bars {
   color: #eee;
 }
 
-#search-form #search-box::-webkit-search-cancel-button {
-  -webkit-appearance: none;
-}
 
 #search-form label {
   color: #fff;
@@ -575,6 +572,7 @@ header .icons #close-bars {
   width: 100%;
   z-index: 10000;
   background: #fff;
+  display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
