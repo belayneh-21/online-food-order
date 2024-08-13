@@ -26,12 +26,14 @@
         <a href="#review">Review</a>
         <a href="#order">Order</a>
       </nav>
-      <div class="icons">
+      <div class="icons flex">
         <i class="fas fa-bars" id="menu-bars"></i>
         <i class="fas fa-times" id="close-bars"></i>
         <i class="fas fa-search" id="search-icon"></i>
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-shopping-cart" id="cart-icon"></a>
+        <div class="flex relative">
+            <a href="#" class="fas fa-shopping-cart" id="cart-icon"></a>
+            <span class="flex w-7 h-7 bg-red-800 justify-center items-center text-white rounded-full absolute bottom-0 right-0">0</span>
+        </div>
       </div>
     </header>
     <!-- search form -->
@@ -54,66 +56,8 @@
         >
         
         <h3 class="sub-heading">selected food</h3>
-        <div class="">
-            <div class=" w-full grid  grid-cols-1 sm:grid-cols-2 gap-4 justify-between">
-            <div class="box">
-                <div class="image">
-                <img src="images/chicken1.jpg" alt="" />
-                </div>
-                <div class="flex justify-between">
-                <h3 class="text-green-900 text-2xl my-5">delicious food</h3>
-                <span class="pice text-2xl my-5">$12.99</span>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                <img src="images/chicken1.jpg" alt="" />
-                </div>
-                <div class="flex justify-between">
-                <h3 class="text-green-900 text-2xl my-5">delicious food</h3>
-                <span class="pice text-2xl my-5">$12.99</span>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                <img src="images/chicken1.jpg" alt="" />
-                </div>
-                <div class="flex justify-between">
-                <h3 class="text-green-900 text-2xl my-5">delicious food</h3>
-                <span class="pice text-2xl my-5">$12.99</span>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                <img src="images/chicken1.jpg" alt="" />
-                </div>
-                <div class=" justify-between">
-                <h3 class="text-green-900 text-2xl my-5">delicious food</h3>
-                <span class="pice text-2xl my-5">$12.99</span>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                <img src="images/chicken1.jpg" alt="" />
-                </div>
-                <div class="flex justify-between">
-                <h3 class="text-green-900 text-2xl my-5">delicious food</h3>
-                <span class="pice text-2xl my-5">$12.99</span>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                <img src="images/chicken1.jpg" alt="" />
-                </div>
-                <div class="flex justify-between">
-                <h3 class="text-green-900 text-2xl my-5">delicious food</h3>
-                <span class="pice text-2xl my-5">$12.99</span>
-                </div>
-            </div>
-            </div>
-            <div class="block absolute bottom-10 left-10">
-            <h2 class="text-3xl flex flex-1">total amount <span class="font-bold pl-4">$112.99</span></h2>
-            </div>
+        <div class="listCard">
+        
         </div>
         </div>
         <!-- oreder-section -->

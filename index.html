@@ -15,23 +15,24 @@
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
+
     <!-- header section  -->
     <header>
       <a href="#" class="logo"><i class="fas fa-utensils"></i>Resto</a>
       <nav class="navbar">
-        <a class="active" href="#home">Home</a>
-        <a href="#dishes">Dishes</a>
-        <a href="#about">About</a>
+        <a href="#home">Home</a>
         <a href="#menu">Menu</a>
+        <a href="#about">About</a>
         <a href="#review">Review</a>
-        <a href="#order">Order</a>
       </nav>
-      <div class="icons">
+      <div class="icons flex">
         <i class="fas fa-bars" id="menu-bars"></i>
         <i class="fas fa-times" id="close-bars"></i>
         <i class="fas fa-search" id="search-icon"></i>
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-shopping-cart" id="cart-icon"></a>
+        <div class="flex relative">
+          <a href="#" class="fas fa-shopping-cart" id="cart-icon"></a>
+          <span id="cart-count" class=" flex w-7 h-7 bg-red-800 justify-center items-center text-white rounded-full absolute bottom-0 right-0">0</span>
+        </div>
       </div>
     </header>
     <!-- search form -->
@@ -56,7 +57,7 @@
             <div class="content">
               <span>Our spacial dish</span>
               <h3>spicy noodles</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
               <a href="#" class="btn">order know</a>
             </div>
             <div class="image">
@@ -67,7 +68,7 @@
             <div class="content">
               <span>Our spacial dish</span>
               <h3>hot Pizza</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
               <a href="#" class="btn">order know</a>
             </div>
             <div class="image">
@@ -78,7 +79,7 @@
             <div class="content">
               <span>Our spacial dish</span>
               <h3>fried chicken</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
               <a href="#" class="btn">order know</a>
             </div>
             <div class="image">
@@ -90,105 +91,17 @@
       </div>
     </section>
 
-    <!-- dishes section -->
+    <!-- menu section -->
 
-    <section class="dishes" id="dishes">
-      <h3 class="sub-heading">our dishes</h3>
-      <h1 class="heading">popular dishes</h1>
-
-      <div class="box-container">
-        <div class="box">
-          <a href="#" class="fas fa-heart"></a>
-          <a href="#" class="fas fa-eye"></a>
-          <img src="images/spicy-noodies.jpg" alt="" />
-          <h3>tasty food</h3>
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-          </div>
-          <span>$15.99</span>
-          <a href="#" class="btn">add to cart</a>
-        </div>
-        <div class="box">
-          <a href="#" class="fas fa-heart"></a>
-          <a href="#" class="fas fa-eye"></a>
-          <img src="images/burger.jpg" alt="" />
-          <h3>tasty food</h3>
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-          </div>
-          <span>$15.99</span>
-          <a href="#" class="btn">add to cart</a>
-        </div>
-        <div class="box">
-          <a href="#" class="fas fa-heart"></a>
-          <a href="#" class="fas fa-eye"></a>
-          <img src="images/salad.jpg" alt="" />
-          <h3>tasty food</h3>
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-          </div>
-          <span>$15.99</span>
-          <a href="#" class="btn">add to cart</a>
-        </div>
-        <div class="box">
-          <a href="#" class="fas fa-heart"></a>
-          <a href="#" class="fas fa-eye"></a>
-          <img src="images/sand1.jpg" alt="" />
-          <h3>tasty food</h3>
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-          </div>
-          <span>$15.99</span>
-          <a href="#" class="btn">add to cart</a>
-        </div>
-        <div class="box">
-          <a href="#" class="fas fa-heart"></a>
-          <a href="#" class="fas fa-eye"></a>
-          <img src="images/pizza1.jpg" alt="" />
-          <h3>tasty food</h3>
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-          </div>
-          <span>$15.99</span>
-          <a href="#" class="btn">add to cart</a>
-        </div>
-        <div class="box">
-          <a href="#" class="fas fa-heart"></a>
-          <a href="#" class="fas fa-eye"></a>
-          <img src="images/chicken1.jpg" alt="" />
-          <h3>tasty food</h3>
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-          </div>
-          <span>$15.99</span>
-          <a href="#" class="btn">add to cart</a>
-        </div>
+    <section class="menu" id="menu">
+      <h3 class="sub-heading">our menu</h3>
+      <h1 class="heading">today's spaciality</h1>
+      <div class="box-container listProduct">
+        
       </div>
     </section>
+
+
 
     <!-- about section -->
 
@@ -230,211 +143,6 @@
       </div>
     </section>
 
-    <!-- menu section -->
-    <section class="menu" id="menu">
-      <h3 class="sub-heading">our menu</h3>
-      <h1 class="heading">today's spaciality</h1>
-      <div class="box-container">
-        <div class="box">
-          <div class="image">
-            <img src="images/chicken1.jpg" alt="" />
-            <a href="#" class="fas fa-heart"></a>
-          </div>
-          <div class="content">
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-            </div>
-            <h3>delicious food</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatibus, praesentium?
-            </p>
-            <a href="#" class="btn">add to cart</a>
-            <span class="pice">$12.99</span>
-          </div>
-        </div>
-        <div class="box">
-          <div class="image">
-            <img src="images/chicken1.jpg" alt="" />
-            <a href="#" class="fas fa-heart"></a>
-          </div>
-          <div class="content">
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-            </div>
-            <h3>delicious food</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatibus, praesentium?
-            </p>
-            <a href="#" class="btn">add to cart</a>
-            <span class="pice">$12.99</span>
-          </div>
-        </div>
-        <div class="box">
-          <div class="image">
-            <img src="images/chicken1.jpg" alt="" />
-            <a href="#" class="fas fa-heart"></a>
-          </div>
-          <div class="content">
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-            </div>
-            <h3>delicious food</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatibus, praesentium?
-            </p>
-            <a href="#" class="btn">add to cart</a>
-            <span class="pice">$12.99</span>
-          </div>
-        </div>
-        <div class="box">
-          <div class="image">
-            <img src="images/chicken1.jpg" alt="" />
-            <a href="#" class="fas fa-heart"></a>
-          </div>
-          <div class="content">
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-            </div>
-            <h3>delicious food</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatibus, praesentium?
-            </p>
-            <a href="#" class="btn">add to cart</a>
-            <span class="pice">$12.99</span>
-          </div>
-        </div>
-        <div class="box">
-          <div class="image">
-            <img src="images/chicken1.jpg" alt="" />
-            <a href="#" class="fas fa-heart"></a>
-          </div>
-          <div class="content">
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-            </div>
-            <h3>delicious food</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatibus, praesentium?
-            </p>
-            <a href="#" class="btn">add to cart</a>
-            <span class="pice">$12.99</span>
-          </div>
-        </div>
-        <div class="box">
-          <div class="image">
-            <img src="images/chicken1.jpg" alt="" />
-            <a href="#" class="fas fa-heart"></a>
-          </div>
-          <div class="content">
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-            </div>
-            <h3>delicious food</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatibus, praesentium?
-            </p>
-            <a href="#" class="btn">add to cart</a>
-            <span class="pice">$12.99</span>
-          </div>
-        </div>
-        <div class="box">
-          <div class="image">
-            <img src="images/chicken1.jpg" alt="" />
-            <a href="#" class="fas fa-heart"></a>
-          </div>
-          <div class="content">
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-            </div>
-            <h3>delicious food</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatibus, praesentium?
-            </p>
-            <a href="#" class="btn">add to cart</a>
-            <span class="pice">$12.99</span>
-          </div>
-        </div>
-        <div class="box">
-          <div class="image">
-            <img src="images/chicken1.jpg" alt="" />
-            <a href="#" class="fas fa-heart"></a>
-          </div>
-          <div class="content">
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-            </div>
-            <h3>delicious food</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatibus, praesentium?
-            </p>
-            <a href="#" class="btn">add to cart</a>
-            <span class="pice">$12.99</span>
-          </div>
-        </div>
-        <div class="box">
-          <div class="image">
-            <img src="images/chicken1.jpg" alt="" />
-            <a href="#" class="fas fa-heart"></a>
-          </div>
-          <div class="content">
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-            </div>
-            <h3>delicious food</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatibus, praesentium?
-            </p>
-            <a href="#" class="btn">add to cart</a>
-            <span class="pice">$12.99</span>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- review section -->
     <section class="review" id="review">
@@ -656,75 +364,19 @@
 
     <!-- cart section -->
     <section id="cart-diplay"
-      class="fixed top-0 duration-600 -right-full z-[1006] w-full sm:w-1/2 m-0 h-screen bg-gray-600"
+      class="fixed top-0 -right-full z-[1006] w-5/6 sm:w-1/4 m-0 p-0 h-screen bg-gray-600"
     >
       <i
         class="fas fa-times absolute hover:text-red-700 top-8 right-8 text-5xl"
         id="cart-close"
       ></i>
-      <h3 class="sub-heading mb-52">selected food</h3>
-      <div class="">
-        <div class="container w-5/6 grid  grid-cols-1 sm:grid-cols-2 gap-4 justify-between">
-          <div class="box">
-            <div class="image">
-              <img src="images/chicken1.jpg" alt="" />
-            </div>
-            <div class="flex justify-between">
-              <h3 class="text-green-900 text-2xl my-5">delicious food</h3>
-              <span class="pice text-2xl my-5">$12.99</span>
-            </div>
-          </div>
-          <div class="box">
-            <div class="image">
-              <img src="images/chicken1.jpg" alt="" />
-            </div>
-            <div class="flex justify-between">
-              <h3 class="text-green-900 text-2xl my-5">delicious food</h3>
-              <span class="pice text-2xl my-5">$12.99</span>
-            </div>
-          </div>
-          <div class="box">
-            <div class="image">
-              <img src="images/chicken1.jpg" alt="" />
-            </div>
-            <div class="flex justify-between">
-              <h3 class="text-green-900 text-2xl my-5">delicious food</h3>
-              <span class="pice text-2xl my-5">$12.99</span>
-            </div>
-          </div>
-          <div class="box">
-            <div class="image">
-              <img src="images/chicken1.jpg" alt="" />
-            </div>
-            <div class=" justify-between">
-              <h3 class="text-green-900 text-2xl my-5">delicious food</h3>
-              <span class="pice text-2xl my-5">$12.99</span>
-            </div>
-          </div>
-          <div class="box">
-            <div class="image">
-              <img src="images/chicken1.jpg" alt="" />
-            </div>
-            <div class="flex justify-between">
-              <h3 class="text-green-900 text-2xl my-5">delicious food</h3>
-              <span class="pice text-2xl my-5">$12.99</span>
-            </div>
-          </div>
-          <div class="box">
-            <div class="image">
-              <img src="images/chicken1.jpg" alt="" />
-            </div>
-            <div class="flex justify-between">
-              <h3 class="text-green-900 text-2xl my-5">delicious food</h3>
-              <span class="pice text-2xl my-5">$12.99</span>
-            </div>
-          </div>
-        </div>
-        <div class="block absolute bottom-10 left-10">
-          <h2 class="text-3xl flex flex-1">total amount <span class="font-bold pl-4">$112.99</span></h2>
-          
-        </div>
-        <a href="checkout.html" class="btn absolute bottom-10 right-10">checkout</a>
+      <h3 class="sub-heading my-5">selected food</h3>
+      <div class="listCard">
+        
+      </div>
+      <div class="absolute bottom-10 flex justify-between w-full items-center">
+        <h2 class="text-3xl py-4" >total amount <span id="totalPrice" class="font-bold pl-4"></span></h2>
+        <a href="checkout.html" class="btn m-0">checkout</a>
       </div>
     </section>
 

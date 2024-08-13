@@ -68,12 +68,12 @@ section:nth-child(odd) {
   background: var(--black);
   border-radius: 10px;
   cursor: pointer;
-  padding: 10px 24px;
+  padding: 6px 18px;
 }
 
 .btn:hover {
   background: var(--green);
-  letter-spacing: 0.1rem;
+  letter-spacing: 1px;
 }
 
 header .logo {
@@ -120,7 +120,6 @@ header .icons i:hover,
 header .icons a:hover {
   color: #fff;
   background: var(--green);
-  transform: rotate(360deg);
 }
 
 header .icons #menu-bars {
@@ -222,81 +221,8 @@ header .icons #close-bars {
   color: var(--green);
 }
 
-/* dishes section */
 
-.dishes .box-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-  gap: 1.5rem;
-}
 
-.dishes .box-container .box {
-  padding: 2.5rem;
-  background: #fff;
-  border-radius: 0.5rem;
-  border: 2px solid rgba(0, 0, 0, 0.2);
-  box-shadow: var(--box-shadow);
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-}
-
-.dishes .box-container .box .fa-heart,
-.dishes .box-container .box .fa-eye {
-  position: absolute;
-  top: 4rem;
-  background: #eee;
-  border-radius: 50%;
-  height: 3rem;
-  width: 3rem;
-  line-height: 3rem;
-  font-size: 1.5rem;
-  color: var(--black);
-}
-
-.dishes .box-container .box .fa-heart:hover,
-.dishes .box-container .box .fa-eye:hover {
-  background: var(--green);
-  color: #fff;
-}
-
-.dishes .box-container .box .fa-heart {
-  right: -15rem;
-}
-.dishes .box-container .box .fa-eye {
-  left: -15rem;
-}
-.dishes .box-container .box:hover .fa-heart {
-  right: 3rem;
-}
-.dishes .box-container .box:hover .fa-eye {
-  left: 3rem;
-}
-
-.dishes .box-container .box img {
-  height: 27rem;
-  margin: 1rem 0;
-}
-
-.dishes .box-container .box h3 {
-  color: var(--black);
-  font-size: 2.5rem;
-}
-
-.dishes .box-container .box .stars {
-  padding: 1rem 0;
-}
-
-.dishes .box-container .box .stars i {
-  font-size: 1.7rem;
-  color: var(--green);
-}
-.dishes .box-container .box span {
-  color: var(--green);
-  font-weight: bolder;
-  margin-right: 10rem;
-  font-size: 2.5rem;
-}
 
 /* about section */
 .about .row {
@@ -363,64 +289,42 @@ header .icons #close-bars {
   border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.5rem;
   box-shadow: var(--box-shadow);
+  position: relative;
 }
 
-.menu .box-container .box .image {
+.menu .box-container .box  img {
   height: 25rem;
   width: 100%;
   padding: 1.5rem;
   overflow: hidden;
-  position: relative;
-}
-.menu .box-container .box .image img {
-  height: 100%;
-  width: 100%;
   border-radius: 0.5rem;
   object-fit: cover;
 }
 
-.menu .box-container .box .image .fa-heart {
-  position: absolute;
-  top: 3rem;
-  right: 3rem;
-  height: 4rem;
-  width: 4rem;
-  line-height: 4rem;
-  text-align: center;
-  font-size: 2rem;
-  background: #fff;
-  border-radius: 50%;
-  color: var(--black);
-}
-.menu .box-container .box .image .fa-heart:hover {
-  background: var(--green);
-  color: #fff;
-}
-.menu .box-container .box .content {
+.menu .box-container .box  {
   padding: 2rem;
   padding-top: 0;
 }
-.menu .box-container .box .content .stars {
-  padding-bottom: 1rem;
-}
-.menu .box-container .box .content .stars i {
-  font-size: 1.7rem;
-  color: var(--green);
-}
-.menu .box-container .box .content h3 {
+.menu .box-container .box  h3 {
   color: var(--black);
   font-size: 2.5rem;
 }
-.menu .box-container .box .content p {
+.menu .box-container .box  p {
   color: var(--light-color);
   font-size: 1.5rem;
   padding: 0.5rem 0;
   line-height: 1.5rem;
 }
-.menu .box-container .box .content .pice {
+.menu .box-container .box  .pice {
   color: var(--green);
-  margin-left: 10rem;
-  font-size: 2.5rem;
+  margin-left: 3rem;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+.menu .box-container .box a{
+  position: absolute;
+  bottom: 1rem;
+  right: 5rem;
 }
 
 /* review section */
@@ -586,9 +490,18 @@ header .icons #close-bars {
   opacity: 0;
 }
 
+/* cart section */
 
 
-
+.listCard .item {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  background: gray;
+  margin: 10px 0;
+  padding: 0 10px;
+}
 
 
 
@@ -648,6 +561,10 @@ header .icons #close-bars {
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-evenly;
   }
+
+  .loader-container img{
+    width: 200px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -655,10 +572,6 @@ header .icons #close-bars {
     font-size: 50%;
   }
 
-  .dishes .box-container .box img {
-    height: auto;
-    width: 100%;
-  }
   .order form .inputBox .input {
     width: 100%;
   }
